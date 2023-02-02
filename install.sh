@@ -1,0 +1,19 @@
+./ManageEngine_OpUtils_64bit.bin <<EOF
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+n
+/opt/ManageEngine/OpManager
+y
+8060
+y
+EOF
