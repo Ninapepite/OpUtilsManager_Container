@@ -15,11 +15,11 @@ docker run -d -p 8060:8060 ninapepite/oputils
 ```
 With persistant volume
 ```
-docker run -d -p 8060:8060 -v oputils:/opt/ManageEngine/OpManager /ninapepite/oputils  
+docker run -d -p 8060:8060 -v oputils:/opt/ManageEngine/OpManager ninapepite/oputils  
 ```
 And I recommanded you to use --dns argument, oputils need dns resolver. You can configure in web interface but it's better to use dns argument
 ```
-docker run -d -p 8060:8060 --dns 192.168.1.1 -v oputils:/opt/ManageEngine/OpManager /ninapepite/oputils
+docker run -d -p 8060:8060 --dns 192.168.1.1 -v oputils:/opt/ManageEngine/OpManager ninapepite/oputils
 ```
 
 
