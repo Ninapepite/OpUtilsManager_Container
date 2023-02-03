@@ -2,6 +2,10 @@
 
 This project allows you to run OpUtils in a container
 
+OpUtils documentation 
+
+[Documentation](https://www.manageengine.com/products/oputils/help/ip-address-management.html)
+
 ## Default account
 
 admin/admin
