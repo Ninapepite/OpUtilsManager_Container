@@ -17,15 +17,16 @@ With persistant volume
 ```
 docker run -d -p 8060:8060 -v oputils:/opt/ManageEngine/OpManager ninapepite/oputils  
 ```
-And I recommand you to use --dns argument, oputils needing dns resolver. You can configure in web interface but it is better to use dns argument
+Oputils needing dns resolver, I recommand you to use --dns argument, 
+You can configure in web interface but it is better to use dns argument
 ```
 docker run -d -p 8060:8060 --dns 192.168.1.1 -v oputils:/opt/ManageEngine/OpManager ninapepite/oputils
 ```
 
 
-## usage
+## Usage
 
-At container running, he start oputils service and webserver
+At container starting, he start oputils service and webserver
 You can watch progression with docker logs
 ```
 docker logs container_name
