@@ -15,3 +15,5 @@ services:
       - 8060:8060
     volumes:
       - dataoputils:/opt/ManageEngine/OpManager
+    mem_limit: "4g"
+    cpus: 4
