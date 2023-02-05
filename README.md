@@ -30,7 +30,30 @@ You can configure in web interface but it is better to use dns argument
 ```
 docker run -d -p 8060:8060 --dns 192.168.1.1 -v oputils:/opt/ManageEngine/OpManager ninapepite/oputils
 ```
+## Docker Compose
 
+In this example I use the arguments of cpus and ram for a better performance in production
+```
+version: "3.9"
+
+volumes:
+  dataoputils:
+
+services:
+  oputils:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    container_name: oputils
+    dns: 192.168.0.1
+    ports:
+      - 8060:8060
+    volumes:
+      - dataoputils:/opt/ManageEngine/OpManager
+    mem_limit: "4g"
+    cpus: 4
+```
 
 ## Usage
 
