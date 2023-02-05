@@ -8,6 +8,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    image: oputils
     restart: always
     container_name: oputils
     dns: 192.168.0.1
