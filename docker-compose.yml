@@ -1,0 +1,17 @@
+version: "3.9"
+
+volumes:
+  dataoputils:
+
+services:
+  oputils:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    container_name: oputils
+    dns: 192.168.0.1
+    ports:
+      - 8060:8060
+    volumes:
+      - dataoputils:/opt/ManageEngine/OpManager
